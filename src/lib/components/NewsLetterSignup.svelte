@@ -10,8 +10,12 @@
             name="vbout_EmbedForm[field][371040]"
             type="email"
             placeholder="Your email here"
-            class="input input-bordered input-md"
+            class="input input-bordered h-12 input-xs lg:input-lg lg:h-auto"
         />
-        <input class="btn" type="submit" value="I want to try it!" />
+        <input
+            class="btn btn-xs h-12 lg:input-lg lg:h-auto"
+            type="submit"
+            value="I want to try it!"
+        />
     </div>
 </form>
