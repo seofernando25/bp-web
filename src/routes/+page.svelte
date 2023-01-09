@@ -2,7 +2,7 @@
     import NewsLetterSignup from "$lib/components/NewsLetterSignup.svelte";
 </script>
 
-<div class="bb-img bb-img-sm " />
+<img class="bb-img" src="bg.png" />
 
 <div class="p-4">
     <div
@@ -18,16 +18,18 @@
     </div>
 </div>
 
-<div class="grid place-content-center items-center p-4">
+<div class="grid place-content-center items-center m-4">
     <NewsLetterSignup />
 </div>
+
 <div class="grid place-content-center items-center">
     <video
         playsinline
         controls
-        class="w-screen lg:m-12 lg:w-[75vw]"
+        class="w-screen lg:m-12 lg:w-[50vw]"
         poster="thumb.png"
     >
+        <track kind="captions" />
         <source src="video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
     </video>
@@ -48,38 +50,14 @@
     <div
         class="p-8 grid grid-cols-2 lg:grid-cols-4 gap-16 items-center img-grid"
     >
-        <img
-            src="https://pagemaker.b-cdn.net/media/66285/1792x1792.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66286/1000x1000.png"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66300/980x691.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66301/1498x1000.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66302/1510x1000.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66304/1000x1000.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66305/1498x1000.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
-        <img
-            src="https://pagemaker.b-cdn.net/media/66306/1500x998.webp"
-            class="media__item media__item--image object-cover object-center"
-        />
+        <img src="https://pagemaker.b-cdn.net/media/66285/1792x1792.webp" />
+        <img src="https://pagemaker.b-cdn.net/media/66286/1000x1000.png" />
+        <img src="https://pagemaker.b-cdn.net/media/66300/980x691.webp" />
+        <img src="https://pagemaker.b-cdn.net/media/66301/1498x1000.webp" />
+        <img src="https://pagemaker.b-cdn.net/media/66302/1510x1000.webp" />
+        <img src="https://pagemaker.b-cdn.net/media/66304/1000x1000.webp" />
+        <img src="https://pagemaker.b-cdn.net/media/66305/1498x1000.webp" />
+        <img src="https://pagemaker.b-cdn.net/media/66306/1500x998.webp" />
     </div>
 </section>
 
@@ -109,23 +87,12 @@
     .bb-img {
         position: absolute;
         z-index: -1;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background-image: url("bg.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-
-    .bb-img-sm {
         opacity: 0.2;
         transform: translate(-10%, 10%);
-    }
-
-    .bb-img-lg {
-        opacity: 1;
-        transform: translate(50%, 0%) !important;
+        left: 0;
+        top: 0;
+        user-select: none;
+        width: 50vh;
     }
 
     .moc-section {
