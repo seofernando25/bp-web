@@ -1,19 +1,17 @@
 <div class="navbar rounded-xl p-4">
-    <div class="navbar-start">
-        <img
-            src="https://pagemaker.b-cdn.net/media/58669/2642x492.png"
-            class="media__item media__item--image object-contain object-left h-8"
-        />
+  <div class="navbar-start gap-4">
+    <img src="logo.svg" alt="Logo" class="h-16 bg-gray-500 rounded-xl p-2" />
+    <img alt="BrikPick" src="logo_text.png" class="h-6" />
 
-        <ul class="menu menu-horizontal px-1 hidden lg:flex">
-            <!-- <li><a>Plus</a></li>
+    <ul class="menu menu-horizontal px-1 hidden lg:flex">
+      <!-- <li><a>Plus</a></li>
       <li><a>News</a></li>
       <li><a>Newsletter</a></li> -->
-        </ul>
-    </div>
+    </ul>
+  </div>
 
-    <div class="navbar-end">
-        <!-- <div class="dropdown lg:hidden">
+  <div class="navbar-end">
+    <!-- <div class="dropdown lg:hidden">
       <div class="dropdown dropdown-left dropdown-bottom">
         <label tabindex="0" class="btn btn-ghost btn-circle">
           <svg
@@ -35,11 +33,11 @@
         </ul>
       </div>
     </div> -->
-    </div>
+  </div>
 </div>
 
 <style>
-    svg {
-        filter: invert(1);
-    }
+  svg {
+    filter: invert(1);
+  }
 </style>
