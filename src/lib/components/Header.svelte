@@ -1,5 +1,5 @@
 <div class="navbar rounded-xl p-4">
-  <div class="navbar-start gap-4">
+  <div class="navbar-start gap-2">
     <img src="logo.png" alt="Logo" class="h-16 p-2" />
     <img alt="BrikPick" src="logo_text.png" class="h-6" />
 
