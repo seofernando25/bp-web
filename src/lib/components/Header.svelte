@@ -1,6 +1,6 @@
 <div class="navbar rounded-xl p-4">
   <div class="navbar-start gap-4">
-    <img src="logo.svg" alt="Logo" class="h-16 bg-gray-500 rounded-xl p-2" />
+    <img src="logo.png" alt="Logo" class="h-16 p-2" />
     <img alt="BrikPick" src="logo_text.png" class="h-6" />
 
     <ul class="menu menu-horizontal px-1 hidden lg:flex">
@@ -37,7 +37,12 @@
 </div>
 
 <style>
-  svg {
-    filter: invert(1);
+  /* Disable img grab */
+  *,
+  *::after,
+  *::before {
+    -webkit-user-drag: none;
+    cursor: default;
+    user-select: none;
   }
 </style>
