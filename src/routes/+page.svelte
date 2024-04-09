@@ -6,20 +6,28 @@
 
 <div class="p-4">
   <div
-    class="main-title text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl "
+    class="main-title text-center font-bold text-4xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl"
   >
-    Stop wasting hours trying to buy brick by brick! We automate it for you.
+    Stop wasting hours trying to buy your bricks brick by brick! We automate it
+    for you.
   </div>
 
   <div
-    class="main-subtitle text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl pt-4 sm:pt-6 md:pt-8 lg:pt-10 xl:pt-12"
+    class="main-subtitle text-center font-bold text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl pt-4 sm:pt-6 md:pt-8 lg:pt-10 xl:pt-12"
   >
     Bulk buy lego pieces straight from Lego <nobr>Pick-A-Brick</nobr> store!
   </div>
 </div>
 
-<div class="grid place-content-center items-center m-4">
+<div class="flex h-16 lg:h-20 gap-4 place-content-center items-center pt-4">
   <NewsLetterSignup />
+  <a
+    class="h-full tooltip"
+    data-tip="Chrome Extension"
+    href="https://chromewebstore.google.com/detail/oinlneaddfceblampipdlbogeogjnbji"
+  >
+    <img src="store.svg" alt="store" class=" h-full animate-bounce" />
+  </a>
 </div>
 
 <div class="grid place-content-center items-center">
@@ -48,21 +56,40 @@
   </div>
 
   <div class="p-8 grid grid-cols-2 lg:grid-cols-4 gap-16 items-center img-grid">
-    <img src="https://pagemaker.b-cdn.net/media/66285/1792x1792.webp" />
-    <img src="https://pagemaker.b-cdn.net/media/66286/1000x1000.png" />
-    <img src="https://pagemaker.b-cdn.net/media/66300/980x691.webp" />
-    <img src="https://pagemaker.b-cdn.net/media/66301/1498x1000.webp" />
-    <img src="https://pagemaker.b-cdn.net/media/66302/1510x1000.webp" />
-    <img src="https://pagemaker.b-cdn.net/media/66304/1000x1000.webp" />
-    <img src="https://pagemaker.b-cdn.net/media/66305/1498x1000.webp" />
-    <img src="https://pagemaker.b-cdn.net/media/66306/1500x998.webp" />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66285/1792x1792.webp"
+    />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66286/1000x1000.png"
+    />
+    <img alt="img" src="https://pagemaker.b-cdn.net/media/66300/980x691.webp" />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66301/1498x1000.webp"
+    />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66302/1510x1000.webp"
+    />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66304/1000x1000.webp"
+    />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66305/1498x1000.webp"
+    />
+    <img
+      alt="img"
+      src="https://pagemaker.b-cdn.net/media/66306/1500x998.webp"
+    />
   </div>
 </section>
 
 <style>
-  /* Main title centered bold extra large */
   .main-title {
-    @apply text-center font-bold;
     max-width: 1280px;
     margin: 0 auto;
     hyphens: none;
@@ -70,17 +97,11 @@
   }
 
   .main-subtitle {
-    @apply text-center font-bold;
     max-width: 1280px;
     margin: 0 auto;
     hyphens: none;
     word-break: keep-all;
   }
-
-  /* video {
-    border-top: 1px solid #797f8c;
-    border-bottom: 1px solid #797f8c;
-  } */
 
   .bb-img {
     position: absolute;
@@ -98,7 +119,6 @@
     min-height: 10rem;
   }
 
-  /* .img-grid > img have same aspec ratio and size */
   .img-grid > img {
     width: 100%;
     height: 100%;
